@@ -1,0 +1,312 @@
+:root{
+    --black: #29313D;
+    --primary: #8454F5;
+    --white: #fff;
+    --orange: #FFC556;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none
+}
+.container{
+    width: 1410px;
+    margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 0.8;
+}
+.common_btn{
+    padding: 20px 48px;
+    background-color: var(--primary);
+    border-radius: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 200%;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    color: var(--white);
+    text-transform: capitalize;
+    display: inline-block;
+}
+.peragraph{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize;
+    color: var(--black);
+}
+.peragraph.effect{
+    padding-left: 26px;
+    position: relative;
+}
+.peragraph.effect::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 6px;
+    background-color: var(--orange);
+}
+.section_heading{
+    font-size: 56px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--black);
+    line-height: 140%;
+    text-transform: capitalize;
+}
+/* =========== Navbar Start ============ */
+#navbar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 555;
+    padding: 30px 0;
+}
+.nav_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 20%;
+}
+.menu{
+    width: 60%;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 75px;
+}
+.menu ul li a{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--black);
+    text-transform: capitalize;
+}
+.nav_btn{
+    width: 20%;
+    text-align: right;
+}
+/* =========== Navbar End ============ */
+
+/* =========== Banner Start ============ */
+#banner{
+    padding: 224px 0 70px 0;
+}
+.banner_wrapper{
+    display: flex;
+    align-items: center;
+}
+.banner_content{
+    width: 720px;
+}
+.banner_content h1{
+    font-size: 64px;
+    line-height: 140%;
+    font-weight: 700;
+    color: var(--black);
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+}
+.banner_content .peragraph{
+    width: 516px;
+}
+.banner_content form{
+    width: 630px;
+    padding: 37px 28px;
+    background: rgba(132, 84, 245, 0.05);
+    position: relative;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    margin-top: 48px;
+}
+.banner_content form button{
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.banner_content form input{
+    width: 350px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    font-family: 'Nunito', sans-serif;
+    color: var(--black);
+}
+.banner_image{
+    width: 690px;
+    position: relative;
+    left: 123px;
+}
+/* =========== Banner End ============ */
+
+/* =========== Brand Start ============ */
+#brand{
+    padding: 80px 0;
+}
+.brand_wrapper{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.brand_item{
+    width: 210px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* =========== Brand End ============ */
+
+/* =========== Solutions Start ============ */
+#solution{
+    padding: 120px 0;
+}
+.solution_heading{
+    display: flex;
+    column-gap: 150px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+#solution .section_heading{
+    width: 564px;
+}
+.solution_heading p{
+    width: 696px;
+}
+.solution_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.solution_item{
+    width: 450px;
+    border-radius: 30px;
+    border: 1px solid rgba(132, 84, 245, 0.4);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 24px 24px 48px 24px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.solu_item_head{
+    display: flex;
+    column-gap: 14px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.solu_item_head h4{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--black);
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.icon_box{
+    width: 70px;
+    height: 70px;
+    border-radius: 14px;
+    background-color: rgba(255, 196, 86, 0.150);
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon_box i{
+    color: var(--orange);
+    font-size: 27px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.solution_item:nth-child(3) .icon_box{
+    background-color: rgba(117, 186, 82, 0.150);
+}
+.solution_item:nth-child(6) .icon_box{
+    background-color: rgba(13, 137, 231, 0.150);
+}
+.solution_item a{
+    display: inline-block;
+    margin-top: 24px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--black);
+    line-height: 100%;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.solution_item:hover{
+    background-color: var(--primary);
+}
+.solution_item:hover .solu_item_head h4{
+    color: var(--white);
+}
+.solution_item:hover .icon_box i{
+    color: var(--white);
+}
+.solution_item:hover .peragraph, .solution_item:hover a{
+    color: #FCFCFE;
+}
+/* =========== Solutions End ============ */
+
+/* =========== Navbar Start ============ */
+/* =========== Navbar End ============ */
+
+/* =========== Navbar Start ============ */
+/* =========== Navbar End ============ */
+
+/* =========== Navbar Start ============ */
+/* =========== Navbar End ============ */
+

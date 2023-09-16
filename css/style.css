@@ -301,12 +301,273 @@ h1,h2,h3,h4,h5,h6,p{
 }
 /* =========== Solutions End ============ */
 
-/* =========== Navbar Start ============ */
-/* =========== Navbar End ============ */
+/* =========== Goals Start ============ */
+#goals{
+   padding: 183px 0 228px 0;
+   position: relative;
+   z-index: -2;
+}
+#goals::after{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    height: 733px;
+    width: 30%;
+    background-color: rgba(99, 62, 185, 0.1);
+    z-index: -1;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    border-radius:  0 150px 150px 0;
+    -webkit-border-radius:  0 150px 150px 0;
+    -moz-border-radius:  0 150px 150px 0;
+    -ms-border-radius:  0 150px 150px 0;
+    -o-border-radius:  0 150px 150px 0;
+}
+.goals_wrapper{
+    display: flex;
+    align-items: center;
+    column-gap: 120px;
+}
+.goals_img{
+    padding-left: 53px;
+    width: 500px;
+    overflow: hidden;
+}
+.goals_img img{
+    width: 100%;
+    object-fit: cover;
+}
+.goals_content{
+    width: 690px;
+    margin-right: 100px;
+}
+.goals_content .peragraph{
+    margin: 24px 0 48px 0;
+}
+/* =========== Goals End ============ */
+
+/* =========== List Start ============ */
+#list{
+    padding: 80px 0 120px 0;
+}
+.list_btn_wrapper{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(219, 204, 252, 0.2);
+    padding: 15px;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    margin-bottom: 120px;
+}
+.list_btn_item{
+    background-color: transparent;
+    border-radius: 18px;
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    border: none;
+    padding: 26px 63px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    font-family: 'Nunito', sans-serif;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    cursor: pointer;
+}
+.list_btn_item.active{
+    background-color: var(--primary);
+    color: var(--white);
+}
+.list_wrapper{
+    display: flex;
+    column-gap: 155px;
+    align-items: center;
+}
+.list_img{
+    width: 542px;
+    overflow: hidden;
+}
+.list_img img{
+    width: 100%;
+    object-fit: cover;
+}
+.list_content{
+    width: 665px;
+    padding-right: 90px;
+}
+.list_content .peragraph{
+    padding: 24px 0 48px 0;
+
+}
+/* =========== List End ============ */
+
+/* =========== Plan Start ============ */
+#plan{
+    padding: 120px 0 164px 0;
+}
+.plan_heading{
+    width: 690px;
+    margin: 0 auto;
+    text-align: center;
+}
+.plan_swap{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+}
+.swap_item{
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--black);
+    line-height: 100%;
+}
+.swap_btn{
+    width: 70px;
+    height: 40px;
+    background-color:var(--primary);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    position: relative;
+}
+.swap_btn::after{
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 26px;
+    background-color: var(--white);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.plan_wrapper{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.plan_item{
+    width: 450px;
+    border-radius: 30px;
+    background-color: transparent;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 48px;
+    margin-top: 160px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.plan_item .package{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 140%;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+}
+.package_details{
+    display: flex;
+    justify-content: space-between;
+    margin: 48px 0;
+}
+.package_details .package_name{
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+}
+.package_name li{
+    display: flex;
+    column-gap: 14px;
+    align-items: center;
+}
+.package_name li i{
+    font-size: 20px;
+    color: #545A64; 
+}
+.package_name li span{
+    font-size: 20px;
+    font-weight: 400;
+    color: #545A64;
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize;
+}
+.package_details .package_value{
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+}
+.package_value li{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize;
+    text-align: right;
+}
+.plan_item .common_btn{
+    background-color: rgba(132, 84, 245, 0.1);
+    color: var(--primary);
+}
+.plan_item:hover{
+    margin-top: 80px;
+    background-color: #181059;
+}
+.plan_item:hover .package{
+    color: #F8FAFC;
+}
+.plan_item:hover .package_name li i, .plan_item:hover .package_name li span{
+    color: #F8FAFC;
+}
+.plan_item:hover .common_btn{
+    background-color: var(--primary);
+    color: var(--white);
+}
+.plan_item:hover .package_value li{
+    color: #F8FAFC;
+}
+/* =========== Plan End ============ */
+
 
 /* =========== Navbar Start ============ */
 /* =========== Navbar End ============ */
-
+/* =========== Navbar Start ============ */
+/* =========== Navbar End ============ */
+/* =========== Navbar Start ============ */
+/* =========== Navbar End ============ */
+/* =========== Navbar Start ============ */
+/* =========== Navbar End ============ */
 /* =========== Navbar Start ============ */
 /* =========== Navbar End ============ */
 
